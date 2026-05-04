@@ -1,27 +1,36 @@
 {
-  "id": "atlas-weather",
+  "knosysApi": 2,
+  "id": "knosys-weather",
   "name": "Weather",
-  "version": "1.0.1",
-  "description": "Weather forecasts for your location and saved locations",
-  "author": "Ryan-Milton",
-  "authorUrl": "https://github.com/Ryan-Milton",
-  "minAtlasVersion": "1.0.0",
+  "version": "2.0.0",
+  "description": "Weather forecasts for your location and saved locations.",
+  "author": {
+    "name": "Knosys",
+    "url": "https://github.com/knosys-app"
+  },
+  "compat": {
+    "knosys": ">=2.0.0 <3.0.0"
+  },
   "permissions": ["network", "storage", "core:locations"],
   "main": "main.js",
   "requiredApiKeys": [
     {
       "id": "openweather",
       "name": "OpenWeather API Key",
-      "description": "Used to fetch current weather and forecasts",
+      "description": "Used to fetch current weather and forecasts.",
       "signupUrl": "https://openweathermap.org/api",
       "required": true
     },
     {
       "id": "googlemaps",
       "name": "Google Maps API Key",
-      "description": "Used for location search and geocoding",
+      "description": "Used for location search and geocoding.",
       "signupUrl": "https://console.cloud.google.com/apis/credentials",
       "required": true
     }
-  ]
+  ],
+  "categories": ["weather", "data"],
+  "homepage": "https://github.com/knosys-app/atlas-weather",
+  "repository": "https://github.com/knosys-app/atlas-weather",
+  "license": "MIT"
 }
