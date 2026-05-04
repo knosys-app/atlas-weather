@@ -1,12 +1,18 @@
 {
-  "name": "atlas-weather",
-  "version": "1.0.0",
+  "name": "knosys-weather",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch"
   },
+  "files": [
+    "manifest.json",
+    "main.js",
+    "styles.css",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
