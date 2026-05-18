@@ -2,31 +2,31 @@
   "knosysApi": 2,
   "id": "knosys-weather",
   "name": "Weather",
-  "version": "2.0.0",
-  "description": "Weather forecasts for your location and saved locations.",
+  "version": "2.1.0",
+  "description": "Weather forecasts, saved locations, and current-location tracking — fully self-contained.",
   "author": {
     "name": "Knosys",
     "url": "https://github.com/knosys-app"
   },
   "compat": {
-    "knosys": ">=2.0.0 <3.0.0"
+    "knosys": ">=2.1.0 <3.0.0"
   },
-  "permissions": ["network", "storage", "core:locations"],
+  "permissions": ["network", "vault:read", "vault:write"],
   "main": "main.js",
   "requiredApiKeys": [
     {
       "id": "openweather",
       "name": "OpenWeather API Key",
-      "description": "Used to fetch current weather and forecasts.",
+      "description": "Used to fetch current weather, forecasts, and location search (Geocoding API).",
       "signupUrl": "https://openweathermap.org/api",
       "required": true
     },
     {
-      "id": "googlemaps",
+      "id": "google_maps",
       "name": "Google Maps API Key",
-      "description": "Used for location search and geocoding.",
+      "description": "Optional — improves reverse-geocoding accuracy when resolving coordinates to a place name.",
       "signupUrl": "https://console.cloud.google.com/apis/credentials",
-      "required": true
+      "required": false
     }
   ],
   "categories": ["weather", "data"],
